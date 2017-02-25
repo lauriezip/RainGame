@@ -6,8 +6,9 @@ body{
 }
 
 h1 {
+	color: #ff0dbf;
 	font-family: 'Arima Madurai', cursive;}
-
+	
 i {
 	color: white;
 	display:inline;
@@ -29,45 +30,36 @@ i {
 
 #guessingNumber {
 	font-family: 'Leckerli One', cursive;
-	background-color: #0E6BA8 ;
 	float: left;
 	display: inline-block;
 	padding: 10px;
 	margin-top: 20px;
-	border: solid 1px #ddd
+	color: #ff0dbf;
+
 }
+
 
 #scoreboard {
 	display: inline-block;
-	padding: 15px 20px 10px 15px;
-	margin-top: 20px;
-	margin-left: 20px;
-	border: solid 1px #ddd
-
-}
-
-# {
+	padding: 10px 10px 10px 10px;
 	margin-top: 10px;
-	margin-bottom: 10px;
-
+	margin-left: 10px;
+	
 }
-
-.Weathericons {
-	height: 50px;
-	border: solid 1px #00072D;
-	margin-left: 10px
-}
-
 
 
 #totalScore {
-	margin-bottom: 50px;
+	margin-bottom: 120px;
+	padding: 40px;
 }
+
 
 #yts {
 	font-family: 'Leckerli One', cursive;
 	display: inline;
+	margin-top: 120px;
 	height: 50px
-	padding: 20px;
-	border: solid 1px #ddd
+	padding: 40px;
+	color: #ff0dbf;
+	
 }

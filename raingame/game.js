@@ -6,10 +6,9 @@ $(document).ready(function() {
 	$('#win').text(wins);
 	$('#loss').text(losses);
 	
-	newWeathericon();
-	newGame();
+	
 
-	function newWeathericon () {
+	function numbertoGuess () {
 		var numbers = []
 			while(numbers.length < 4){
 			  var randomnumber = Math.ceil(Math.random()*12);
@@ -23,14 +22,7 @@ $(document).ready(function() {
 			}
 		console.log(numbers);		
 
-		for (i = 0; i < numbers.length; i++) {
-			var imageIcon = $('<img>');
-			imageIcon.attr('data-num', numbers[i]);
-			imageIcon.attr('src', Weathericon[i]);
-			imageIcon.attr('alt', 'newWeathericon');
-			imageIcon.addClass('imageIcon')
-			$('#Weathericon').append(imageIcon);
-		}
+		
 	}
 
 	function newGame() {
@@ -42,32 +34,32 @@ $(document).ready(function() {
 		   	return Math.floor(Math.random()*(max-min+1)+min);
 			}
 
-		var numberToGuess = randomIntFromInterval(19,120);
+		var guessingNumber = randomIntFromInterval(19,120);
 
-		$('.value').text(numberToGuess);
+		$('.value').text(counter);
 
 
-		$('.imageIcon').on('click', function(){
+		$('.weatherIcon').on('click', function(){
 		    counter = counter + parseInt($(this).data('num'));
 		   
 		    $('#yourScore').text(counter);
 
-		    if (counter == numberToGuess){
+		    if (counter == guessingNumber){
 		      $('#status').text('You won!!!!');
 		      wins ++;
 		      $('#win').text(wins);
 		      console.log(wins)
-		      $('#Weathericon').empty();
-		      newWeathericon();
+		      $('#guessingNumber').empty();
+		      weatherIcon();
 		      newGame();
 		        
-		    } else if ( counter > numberToGuess){
+		    } else if ( counter > guessingNumber){
 		        $('#status').text('You lost!')
 		        losses ++;
 		        $('#loss').text(losses);
 		        console.log(losses)
-		        $('#Weathericon').empty();
-		        newWeathericon();
+		        $('#yts').empty();
+		        weatherIcon();
 		        newGame();
 		    }
 		});
