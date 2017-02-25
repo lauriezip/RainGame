@@ -1,0 +1,73 @@
+body{
+	background-image: url("assets/images/RainDrops.png" ); 
+	height: 20px
+	width: 20px
+
+}
+
+h1 {
+	font-family: 'Arima Madurai', cursive;}
+
+i {
+	color: white;
+	display:inline;
+	clear: both;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: solid 1px #ddd;
+}
+
+#instructions {
+	font-family: 'Leckerli One', cursive;
+	background-color: white;
+	width: 50%;
+	clear:both;
+	padding: 15px;
+	margin-top: 20px;
+	border: solid 1px #ddd
+}
+
+#guessingNumber {
+	font-family: 'Leckerli One', cursive;
+	background-color: #0E6BA8 ;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 1px #ddd
+}
+
+#scoreboard {
+	display: inline-block;
+	padding: 15px 20px 10px 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border: solid 1px #ddd
+
+}
+
+# {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+.Weathericons {
+	height: 50px;
+	border: solid 1px #00072D;
+	margin-left: 10px
+}
+
+
+
+#totalScore {
+	margin-bottom: 50px;
+}
+
+#yts {
+	font-family: 'Leckerli One', cursive;
+	display: inline;
+	height: 50px
+	padding: 20px;
+	border: solid 1px #ddd
+}
